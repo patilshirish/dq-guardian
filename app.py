@@ -58,12 +58,12 @@ st.markdown("""
 
     /* Metric tiles */
     .metric-tile {
-        background:#1a1d27; border:1px solid #2d3148;
+        background:#1a1d27; border:1px solid #4a4f6a;
         border-radius:8px; padding:1rem; text-align:center;
     }
-    .metric-tile .val { font-size:2rem; font-weight:700; color:#e0e4ff; }
-    .metric-tile .lbl { font-size:0.75rem; color:#8b8fa8; text-transform:uppercase;
-                        letter-spacing:0.08em; margin-top:4px; }
+    .metric-tile .val { font-size:2rem; font-weight:700; color:#ffffff; }
+    .metric-tile .lbl { font-size:0.75rem; color:#cccccc; text-transform:uppercase;
+                        letter-spacing:0.08em; margin-top:4px; }                        
 
     /* Header */
     .app-header {
@@ -79,6 +79,81 @@ st.markdown("""
 
     /* Hide streamlit branding */
     #MainMenu, footer { visibility: hidden; }
+
+    /* Make markdown tables readable on dark background */
+    .stMarkdown table {
+        color: #ffffff !important;
+        background: #1a1d27 !important;
+    }
+    .stMarkdown table th {
+        color: #ffffff !important;
+        background: #2d3148 !important;
+        font-weight: 700 !important;
+        border: 1px solid #4a4f6a !important;
+        padding: 8px 12px !important;
+    }
+    .stMarkdown table td {
+        color: #e0e4ff !important;
+        border: 1px solid #2d3148 !important;
+        padding: 8px 12px !important;
+    }
+    .stMarkdown table tr:nth-child(even) {
+        background: #22253a !important;
+    }
+    .stMarkdown p, .stMarkdown li {
+        color: #e0e4ff !important;
+    }
+    .stMarkdown h1, .stMarkdown h2, .stMarkdown h3 {
+        color: #ffffff !important;
+    }
+
+    /* Sidebar — light background, dark fonts */
+    [data-testid="stSidebar"] {
+        background-color: #f0f2f6 !important;
+        border-right: 1px solid #d0d4e0 !important;
+    }
+    [data-testid="stSidebar"] * {
+        color: #1a1d27 !important;
+    }
+    [data-testid="stSidebar"] .stMarkdown p {
+        color: #444860 !important;
+        font-size: 0.85rem !important;
+    }
+    [data-testid="stSidebar"] h3 {
+        color: #0f1117 !important;
+        font-size: 1rem !important;
+        font-weight: 700 !important;
+    }
+    [data-testid="stSidebar"] strong {
+        color: #0f1117 !important;
+    }
+    [data-testid="stSidebar"] a {
+        color: #4a56c8 !important;
+        text-decoration: none !important;
+    }
+    [data-testid="stSidebar"] a:hover {
+        color: #0f1117 !important;
+        text-decoration: underline !important;
+    }
+    [data-testid="stSidebar"] hr {
+        border-color: #d0d4e0 !important;
+    }
+    [data-testid="stSidebar"] .stTextInput label {
+        color: #444860 !important;
+    }
+    [data-testid="stSidebar"] .stTextInput input {
+        background-color: #ffffff !important;
+        color: #1a1d27 !important;
+        border: 1px solid #d0d4e0 !important;
+    }
+    [data-testid="stSidebar"] .stSuccess {
+        background-color: #e6f9ee !important;
+        color: #1a7a3e !important;
+    }
+    [data-testid="stSidebar"] .stWarning {
+        background-color: #fff8e6 !important;
+        color: #7a4f1a !important;
+    }  
 </style>
 """, unsafe_allow_html=True)
 

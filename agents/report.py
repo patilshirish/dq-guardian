@@ -64,16 +64,39 @@ HR analytics teams, and data governance executives (CDO/VP level).
 
 {context}
 
-Structure the report with these sections:
-1. **Executive Summary** (5-6 bullets, business language)
-2. **Dataset Overview** (table with key metrics)
-3. **Data Quality Scorecard** (table: dimension | score | status)
-4. **Anomaly Findings** (by category, with severity)
-5. **Root Cause Analysis** (synthesized)
-6. **Remediation Roadmap** (table: Action | Owner | Priority | Timeline)
-7. **Risk to Downstream Consumers** (attrition models, HR dashboards)
-8. **Recommended Monitoring Rules** (as pseudocode)
-9. **Next Steps & Owners**
+Structure the report with EXACTLY these sections and table formats:
+
+1. **Executive Summary** — a table with EXACTLY these 4 columns:
+   | Metric | Value | Status | Impact |
+   Rows must include: Report Date, Dataset, Total Issues Detected, 
+   Issue Density, Data Usability. Do not remove or rename any column.
+
+2. **Data Quality Scorecard** — a table with EXACTLY these 5 columns:
+   | Dimension | Score | Status | Trend | Notes |
+   Rows: Completeness, Validity, Uniqueness, Consistency, Timeliness, Overall Quality.
+
+3. **Anomaly Findings** — organized by category (Missing Values, Domain 
+   Violations, Duplicates) with severity badges and row counts.
+
+4. **Root Cause Analysis** — synthesized from the analysis above, 
+   with confidence levels (High / Medium / Low) for each hypothesis.
+
+5. **Remediation Roadmap** — a table with EXACTLY these 5 columns:
+   | Action | Owner | Priority | Effort | Timeline |
+
+6. **Risk to Downstream Consumers** — specific impact on attrition 
+   models, HR dashboards, and workforce planning reports.
+
+7. **Recommended Monitoring Rules** — as Great Expectations style pseudocode.
+
+8. **Next Steps & Owners** — clear action items with named owners.
+
+IMPORTANT RULES:
+- Always use exactly the column names specified above
+- Never remove, rename, or merge any columns
+- Use markdown tables for all structured data
+- Keep business language throughout — avoid overly technical jargon
+- Every table must have a header row and at least one data row
 
 Include a header with run metadata. Format cleanly in markdown."""
 
