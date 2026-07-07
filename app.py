@@ -105,8 +105,8 @@ with st.sidebar:
     st.divider()
     st.markdown("**Built by**")
     st.markdown("Shirish Patil | Data & AI Executive")
-    st.markdown("[LinkedIn](https://linkedin.com/in/shirishpatil) · "
-                "[GitHub](https://github.com/shirishpatil)")
+    st.markdown("[LinkedIn](https://linkedin.com/in/shirishraopatil) · "
+                "[GitHub](https://github.com/patilshirish)")
     st.divider()
 
     api_key = st.text_input(
