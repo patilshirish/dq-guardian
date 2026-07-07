@@ -57,6 +57,20 @@ IBM HR Attrition Dataset
 
 ---
 
+## 🌐 Live Demo
+
+Try it in your browser — no installation needed:
+
+**→ [dq-guardian-patilshirish.streamlit.app](https://dq-guardian-patilshirish.streamlit.app)**
+
+You'll need a free Anthropic API key to run the analysis:
+1. Go to **console.anthropic.com** and sign up
+2. Create an API key (takes 2 minutes)
+3. Paste it in the app sidebar
+4. Upload any HR CSV or use the built-in IBM HR sample
+
+---
+
 ## Quick Start
 
 ```bash
