@@ -104,7 +104,7 @@ with st.sidebar:
 
     st.divider()
     st.markdown("**Built by**")
-    st.markdown("Shirish Patil | Data & AI Executive")
+    st.markdown("Shirish Patil | Data & AI")
     st.markdown("[LinkedIn](https://linkedin.com/in/shirishraopatil) · "
                 "[GitHub](https://github.com/patilshirish)")
     st.divider()
